@@ -1,0 +1,269 @@
+/* font-family:
+        roboto
+        open-sans */
+/* -----------Global------- */
+
+html, body{
+    font-family: Roboto;
+    font-weight: 700;
+    margin: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+h1{
+    text-transform: uppercase;
+    font-family: Roboto;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* ----------Navbar------ */
+#mainNavbar .navbar-brand{
+    color: #12E8F6;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+#mainNavbar {
+    display: grid;
+    grid-template-columns: 1fr .2fr;
+}
+
+#mainNavbar .nav-link{
+    color: white;
+    font-size: 2vw;
+}
+
+#mainNavbar .nav-link:hover{
+    color: #ea1c2c;
+}
+
+.navbar.scrolled{
+    background: #5d83d3;
+    transition: background 1000ms;
+}
+
+/* -------Navbar-------- */
+
+/* -------Side Bar------ */
+.side-bar{
+    position: fixed;
+    bottom: 1rem;
+    right: 3rem;
+    width: 30px;
+    box-sizing: border-box;
+}
+
+.side-icon{
+    font-size: 1.2em;
+}
+
+.side-bar ul li a:hover{
+    cursor: pointer;
+    font-size: 2vw;
+    color: red;
+}
+/* -------Side Bar------ */
+
+/* ----cover page------*/
+.cover-page{
+    padding: 3vw;
+    background-image: linear-gradient(rgba(4,9,30,0.1), rgba(4,9,30,0.7)), url(./img/cover.jpg);   
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.myself{
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+/* ---cover page-----*/
+/* About me */
+.about-me{
+    background-image: url(./img/white-keyboard.jpg);
+    background-size: cover;
+    margin: 3vw;
+    padding: 1vw;
+   
+}
+
+#name{
+    color: orange;
+    transition-property: font-size;
+    transition-duration: 1s;
+}
+
+#name:hover{
+    font-size: 1.5em;
+}
+.about-me-content{
+    font-size: 2vw;
+}
+/* About me */
+
+/* text animation */
+.typer{
+    color: orange;
+    font-size: 3vw;
+}
+
+/* text animation */
+
+/* -----skills page----- */
+
+.skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+#skills-header{
+    padding: 0.5em;
+    color: red;
+    text-shadow: 5px 5px 5px indianred;
+}
+
+.icon{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    box-shadow: 5px 5px 6px red;
+    padding: 1em;
+}
+.icon img{
+    width: 20%;
+}
+
+/* -----skills page------- */
+
+/* -----------Projects--------*/
+ .Projects{
+    margin: 2vw;
+ }
+
+ .Projects .inner-projects{
+    /* margin: 0 0 0 15vw; */
+    padding:0 12vw;
+    
+ }
+
+video{
+    width: 70vw;
+}
+
+#blog-content{
+    color: black;
+    background-color: white;
+}
+
+.gitLink{
+    font-size: 3em;
+}
+
+/* -------------Projects---------*/
+
+
+/* Footer */
+footer.footer{
+    height: 100%;
+    background: black;
+    position: relative;
+}
+
+footer.footer .container h2{
+    color: white;
+}
+
+footer.footer .follow-me div i{
+    color: white;
+    padding: 1rem;
+    font-size: 2em;
+}
+
+
+footer.footer .rights h4 a{
+    color: white;
+}
+
+
+footer.footer .move-up span:hover{
+    color: white;
+    cursor: pointer;
+}
+/* Footer */
+
+/* Media */
+@media (max-width: 1000px){
+
+    .skills{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    /* .skills .icon{
+        text-shadow: 10px 10px 3px gray;
+    } */
+    .skills .icon img{
+        width: 5em;
+    }
+    .cover-page{
+        padding: 6vw;
+    }
+  
+}
+
+@media (max-width: 750px){
+    #WebName{
+        display: none;
+    }
+    .navbar-toggler{
+        width: 2em;
+    }
+}
+
+
+@media (max-width: 500px){
+    #mainNavbar{
+        border: 2ps solid black;
+    }
+
+    .container-skills{
+        text-transform: uppercase;
+    }
+    .skills{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 1em;
+    }
+
+    .skills .icon{
+        box-shadow: none;
+        padding-bottom: 1em;
+    }
+
+    .about-me-content{
+        font-size: 3vw;
+    }
+    
+    .typed-text{
+        color: red;
+    }
+}
+
+
